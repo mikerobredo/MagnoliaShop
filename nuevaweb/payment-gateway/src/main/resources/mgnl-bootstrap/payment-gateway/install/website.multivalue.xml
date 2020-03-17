@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="multivalue" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:page</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>bbf3e07d-53a9-4bbc-b655-b54b31e8491a</sv:value>
+  </sv:property>
+  <sv:property sv:name="hideInNav" sv:type="Boolean">
+    <sv:value>false</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>anonymous</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2020-03-06T11:26:12.660+01:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>anonymous</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2020-03-09T10:19:25.944+01:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>anonymous</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:template" sv:type="String">
+    <sv:value>redsys-payment-module:pages/checkout</sv:value>
+  </sv:property>
+  <sv:property sv:name="navigationTitle" sv:type="String">
+    <sv:value>multivalue test</sv:value>
+  </sv:property>
+  <sv:property sv:name="title" sv:type="String">
+    <sv:value>multivalue</sv:value>
+  </sv:property>
+  <sv:node sv:name="main">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:area</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>58cfff16-7987-4c3a-85af-eb720d01d0c1</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2020-03-06T11:26:16.237+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>System [anonymous]</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2020-03-09T10:19:25.944+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>anonymous</sv:value>
+    </sv:property>
+    <sv:node sv:name="0">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:component</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>29efa065-2b4b-4f6a-acc3-73faf2cc4a61</sv:value>
+      </sv:property>
+      <sv:property sv:name="ScoreFilm" sv:type="String">
+        <sv:value>inspector gadget</sv:value>
+      </sv:property>
+      <sv:property sv:name="ScoreFilm_es" sv:type="String">
+        <sv:value>toros para todos</sv:value>
+      </sv:property>
+      <sv:property sv:name="ScorePunt" sv:type="String">
+        <sv:value>10</sv:value>
+      </sv:property>
+      <sv:property sv:name="ScorePunt_es" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="categories" sv:type="String" sv:multiple="true">
+        <sv:value>0bc413d1-642d-4090-bd0a-d743298a8e8f</sv:value>
+        <sv:value>6bba012c-4edb-471c-87c0-1b558e2d9037</sv:value>
+      </sv:property>
+      <sv:property sv:name="categories_es" sv:type="String" sv:multiple="true">
+        <sv:value>c6725f2f-657d-433f-9efb-9c5ff0fadb08</sv:value>
+        <sv:value>c6725f2f-657d-433f-9efb-9c5ff0fadb08</sv:value>
+      </sv:property>
+      <sv:property sv:name="compositecompdate" sv:type="Date">
+        <sv:value>2020-03-07T00:00:00.000+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="compositecomptitle" sv:type="String">
+        <sv:value>compositecomp title</sv:value>
+      </sv:property>
+      <sv:property sv:name="date" sv:type="Date">
+        <sv:value>2020-03-07T00:00:00.000+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="dateCompositeFieldDefinition" sv:type="Date">
+        <sv:value>2020-03-07T00:00:00.000+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>anonymous</sv:value>
+      </sv:property>
+      <sv:property sv:name="merchantSignature" sv:type="String">
+        <sv:value>merchant in english</sv:value>
+      </sv:property>
+      <sv:property sv:name="merchantSignature_es" sv:type="String">
+        <sv:value>merchant en español</sv:value>
+      </sv:property>
+      <sv:property sv:name="message" sv:type="String">
+        <sv:value>plainText</sv:value>
+      </sv:property>
+      <sv:property sv:name="message_es" sv:type="String">
+        <sv:value>plainText</sv:value>
+      </sv:property>
+      <sv:property sv:name="messageplainText" sv:type="String">
+        <sv:value>im just an english men</sv:value>
+      </sv:property>
+      <sv:property sv:name="messageplainText_es" sv:type="String">
+        <sv:value>soy andaluH!</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2020-03-06T11:58:39.771+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>anonymous</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2020-03-09T10:19:25.944+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>anonymous</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:template" sv:type="String">
+        <sv:value>redsys-payment-module:components/multivalue</sv:value>
+      </sv:property>
+      <sv:property sv:name="mv" sv:type="String" sv:multiple="true">
+        <sv:value>0bc413d1-642d-4090-bd0a-d743298a8e8f</sv:value>
+        <sv:value>6bba012c-4edb-471c-87c0-1b558e2d9037</sv:value>
+      </sv:property>
+      <sv:property sv:name="mv_es" sv:type="String" sv:multiple="true">
+        <sv:value>c6725f2f-657d-433f-9efb-9c5ff0fadb08</sv:value>
+        <sv:value>bbf3e07d-53a9-4bbc-b655-b54b31e8491a</sv:value>
+      </sv:property>
+      <sv:property sv:name="mvjson" sv:type="String">
+        <sv:value>040c44ea-c529-4309-bdf6-58345e1479dd,8f7c5446-a2ac-414d-a5bc-ecbd1ccbdf55</sv:value>
+      </sv:property>
+      <sv:property sv:name="position" sv:type="String">
+        <sv:value>bottom</sv:value>
+      </sv:property>
+      <sv:property sv:name="title" sv:type="String">
+        <sv:value>Hora de ocio</sv:value>
+      </sv:property>
+      <sv:property sv:name="titleCompositeFieldDefinition" sv:type="String">
+        <sv:value>hora deocio</sv:value>
+      </sv:property>
+      <sv:node sv:name="00">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>fc5bd03b-ad1c-45d4-b5e5-ed7861a04b14</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T17:00:03.807+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-06T17:00:03.807+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="shoppingListChildrenNode" sv:type="String">
+          <sv:value>pan </sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="01">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>db0d72a6-6798-4f77-b84c-26768fe1362d</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T17:00:03.807+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-06T17:00:03.807+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="shoppingListChildrenNode" sv:type="String">
+          <sv:value>aceite</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="shoppingList0">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>b5b23d96-52f8-4149-a1d2-dcc30da238e1</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T16:52:30.693+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.939+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="shoppingitem" sv:type="String">
+          <sv:value>ajo</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="shoppingList1">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>c5b800e8-4459-4b42-9632-720050c99433</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T16:52:30.694+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.940+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="shoppingitem" sv:type="String">
+          <sv:value>agua</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="shoppingList2">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>54aac240-d2f6-461c-9b7d-5f7fce84290a</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T16:52:30.695+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-06T16:52:30.695+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="shoppingListsubchilpropr">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>a63941fa-3aae-4ee2-a59b-80bb23663369</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T17:25:07.126+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.944+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:node sv:name="00">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>8c69568e-9f1d-4a47-b8ae-d0b7494c6f77</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2020-03-06T17:25:07.126+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2020-03-06T17:25:07.126+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="shoppingListsubchilpropr" sv:type="String">
+            <sv:value>oreo</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="01">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>3be5ad56-e4d8-423e-9fd9-3f5d0a746b39</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2020-03-06T17:25:07.126+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2020-03-06T17:25:07.126+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="shoppingListsubchilpropr" sv:type="String">
+            <sv:value>gelatina</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="shoppingListSubChildNodeTransformer">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>47c04f7b-6f52-4449-a077-f4be705d35f8</sv:value>
+        </sv:property>
+        <sv:property sv:name="0" sv:type="String">
+          <sv:value>azucar</sv:value>
+        </sv:property>
+        <sv:property sv:name="1" sv:type="String">
+          <sv:value>galleta</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-06T17:06:37.287+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.940+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="MVCevents">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>9fb7503f-70d8-4437-a3eb-22bcf589e117</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.940+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2020-03-09T10:19:25.940+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>anonymous</sv:value>
+        </sv:property>
+        <sv:node sv:name="00">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>8f574d8b-dd54-49ce-bf34-fcbf704518c6</sv:value>
+          </sv:property>
+          <sv:property sv:name="MVCdate" sv:type="Date">
+            <sv:value>2020-03-02T00:00:00.000+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="MVCtitle" sv:type="String">
+            <sv:value>fecha nacimiento</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.942+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.942+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="01">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>c3740674-0c79-4331-ab2a-c30ff79c945f</sv:value>
+          </sv:property>
+          <sv:property sv:name="MVCdate" sv:type="Date">
+            <sv:value>2020-03-11T00:00:00.000+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="MVCtitle" sv:type="String">
+            <sv:value>fecha vacunacion</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.943+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.943+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="02">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>a6a3ebd3-1231-4238-9cff-b0deceae9a85</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.943+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2020-03-09T10:19:25.943+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>anonymous</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="footer">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:area</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>7ab73e22-806a-4a3d-aeb5-f6b2e676e953</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2020-03-06T11:26:16.431+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>System [anonymous]</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2020-03-06T11:26:16.431+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>System [anonymous]</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

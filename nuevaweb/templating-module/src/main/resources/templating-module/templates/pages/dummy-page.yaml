@@ -1,0 +1,12 @@
+templateScript: /templating-module/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: templating-module:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: templating-module:components/dummy-component
+      titleText-component:
+        id: templating-module:components/titleText-component

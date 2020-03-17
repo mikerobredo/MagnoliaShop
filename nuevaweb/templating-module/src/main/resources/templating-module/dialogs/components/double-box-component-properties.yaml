@@ -1,0 +1,21 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: leftText
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Izquierda
+        - name: rightText
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Derecha
+        - name: rightTitle
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Derecha
+          
+            
+          
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

@@ -1,0 +1,8 @@
+iframe#redsys-hosted-pay-button {
+    height: 250px !important;
+}
+
+.cardinfo-label {
+	border-color: black;
+    border: dashed;
+}

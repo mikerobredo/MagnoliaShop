@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeTypes xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mgnl="http://www.magnolia.info/jcr/mgnl" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal">
+   <!-- custom node types -->
+   <nodeType name="mgnl:objeto" isMixin="false" hasOrderableChildNodes="true" primaryItemName="">
+      <supertypes>
+         <supertype>mgnl:content</supertype>
+      </supertypes>
+   </nodeType>
+</nodeTypes>

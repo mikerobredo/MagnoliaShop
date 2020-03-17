@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>payment-gateway</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>com.atsistemas.mamp.ecommerce.payment.PaymentGateway</class>
+  <versionHandler>com.atsistemas.mamp.ecommerce.payment.setup.PaymentGatewayVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+	<components>
+		<id>main</id>
+		
+		<component>
+			<type>com.atsistemas.mamp.ecommerce.payment.cipher.interfaces.ICipherUtils</type>
+			<implementation>com.atsistemas.mamp.ecommerce.payment.cipher.impl.CipherUtils</implementation>
+		</component>
+		
+		<component>
+			<type>com.atsistemas.mamp.ecommerce.payment.business.paypal.interfaces.IPaypalCommunication</type>
+			<implementation>com.atsistemas.mamp.ecommerce.payment.business.paypal.impl.PaypalCommunication</implementation>
+		</component>
+		
+		<component>
+			<type>com.atsistemas.mamp.ecommerce.payment.business.ingenico.interfaces.IIngenicoCommunication</type>
+			<implementation>com.atsistemas.mamp.ecommerce.payment.business.ingenico.impl.IngenicoCommunication</implementation>
+		</component>
+		
+		<component>
+			<type>com.atsistemas.mamp.ecommerce.payment.business.ingenico.interfaces.IPaypalIntegration</type>
+			<implementation>com.atsistemas.mamp.ecommerce.payment.business.ingenico.impl.PaypalIntegration</implementation>
+		</component>
+		
+	</components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.5/*</version>
+    </dependency>
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <dependency>
+      <name>mte</name>
+      <version>0.7/*</version>
+    </dependency>
+    -->
+  </dependencies>
+
+	<servlets>
+		<servlet>
+			<name>PaypalNativeServlet</name>
+			<class>com.atsistemas.mamp.ecommerce.payment.business.paypal.servlets.PaypalNativeServlet</class>
+      		<comment>Servlet to manage Paypal Native Payment</comment>
+			<mappings>
+				<mapping>/.PaypalNativeServlet</mapping>
+			</mappings>
+		</servlet>
+		<servlet>
+			<name>IngenicoServlet</name>
+			<class>com.atsistemas.mamp.ecommerce.payment.business.ingenico.servlets.IngenicoServlet</class>
+      		<comment>Servlet to manage Ingenico Payment</comment>
+			<mappings>
+				<mapping>/.IngenicoServlet</mapping>
+			</mappings>
+		</servlet>
+		<servlet>
+			<name>PaypalIngenicoServlet</name>
+			<class>com.atsistemas.mamp.ecommerce.payment.business.ingenico.servlets.PaypalIngenicoServlet</class>
+      		<comment>Servlet to manage Paypal Payment across Ingenico</comment>
+			<mappings>
+				<mapping>/.PaypalIngenicoServlet</mapping>
+			</mappings>
+		</servlet>
+	</servlets>
+  
+</module>

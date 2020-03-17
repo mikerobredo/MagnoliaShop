@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+    <groupId>com.atsistemas.magnolia</groupId>
+    <artifactId>nuevaweb</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<groupId>com.atsistemas.mamp.ecommerce</groupId>
+	<artifactId>payment-gateway</artifactId>
+	<version>${payment.gateway.module.version}</version>
+	<packaging>jar</packaging>
+	<name>payment-gateway</name>
+
+	<!-- Fill the following in, so you can use the release plugin -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<!-- TEST -->
+		<dependency>
+			<groupId>info.magnolia.restclient</groupId>
+			<artifactId>magnolia-rest-client-app</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.rest</groupId>
+			<artifactId>magnolia-rest-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.rest</groupId>
+			<artifactId>magnolia-rest-integration</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.rest</groupId>
+			<artifactId>magnolia-rest-tools</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.paypal.sdk</groupId>
+			<artifactId>merchantsdk</artifactId>
+			<version>2.13.117</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paypal.sdk</groupId>
+			<artifactId>rest-api-sdk</artifactId>
+			<version>1.14.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
+		
+		
+		<dependency>
+		<groupId>info.magnolia</groupId>
+		  <artifactId>magnolia-templating</artifactId>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-rendering</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>info.magnolia.ui</groupId>
+			<artifactId>magnolia-ui-workbench</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>es.redsys.insite.api</groupId>
+			<artifactId>insite-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Enterprise Security API -->
+		<dependency>
+			<groupId>org.owasp.esapi</groupId>
+			<artifactId>esapi</artifactId>
+			<version>2.1.0.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+		<!-- default resources configuration which will filter the module descriptor -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+			<resource>
+				<filtering>true</filtering>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>META-INF/magnolia/*</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
+</project>

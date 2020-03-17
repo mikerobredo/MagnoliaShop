@@ -1,0 +1,17 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: firstText
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: primer texto
+        - name: secondText
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: segundo texto
+            
+          
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

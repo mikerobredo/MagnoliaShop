@@ -1,0 +1,4 @@
+title: Redsys
+renderType: freemarker
+dialog: redsys-payment-module:components/redsys
+templateScript: /redsys-payment-module/templates/components/redsys.ftl

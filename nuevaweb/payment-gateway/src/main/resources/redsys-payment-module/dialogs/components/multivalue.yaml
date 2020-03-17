@@ -1,0 +1,213 @@
+form:
+  label: Pago de Redsys
+  tabs:
+    - name: Multivalue
+      label: Multivalue
+      fields:
+        - name: mv
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          i18n: true
+          field:
+            name: linkField
+            class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+            targetWorkspace: website
+            appName: pages
+            identifierToPathConverter:
+              class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter 
+        - name: merchantSignature
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: merchantSignature 
+          i18n: true       
+      
+        - name: Link
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: website
+          appName: pages
+          label: Select Link
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter 
+
+    - name: Composite
+      label: Composite
+      fields:
+        - name: Score
+          class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+          i18n: true
+          label: scores
+          fields:
+            - name: Film
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: film
+            - name: Punt
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: punt     
+              
+    - name: Switchable
+      label: switchable
+      fields:              
+        - name: message
+          class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
+          label: Message
+          i18n: true
+          options:
+            - name: plainText
+              label: Plain
+              selected: true
+              value: plainText
+            - name: richText
+              label: Rich
+              value: richText
+          fields:
+            - name: plainText
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: Plain text message
+              rows: 5
+            - name: richText
+              class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+              label: Rich text message
+              height: 200   
+              
+    - name: Transformers
+      label: Transformers         
+      fields:
+        - name: composite DelegatingCompositeFieldTransformer
+          class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+          transformerClass:  info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+          label: CompositeFieldDefinition
+          i18n: true
+          fields:
+            - name: titleCompositeFieldDefinition
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: Title
+            - name: dateCompositeFieldDefinition
+              class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+              label: Date
+              
+        - name: composite noop
+          class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+          transformerClass:  info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+          label: noop
+          i18n: true
+          fields:
+            - name: titlenoop
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: Title
+            - name: datenoop
+              class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+              label: Date        
+                 
+        - name: compositecomp
+          class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+          transformerClass:  info.magnolia.ui.form.field.transformer.composite.CompositeTransformer
+          label: composite comp
+          i18n: true
+          fields:
+            - name: title
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+              label: Title
+            - name: date
+              class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+              label: Date       
+              
+    - name: Multivaluejson
+      label: Multivaluejson
+      fields:
+        - name: mvjson
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          transformerClass:  info.magnolia.ui.form.field.transformer.multi.MultiValueJSONTransformer          
+          i18n: true
+          field:
+            name: linkFieldjson
+            class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+            targetWorkspace: website
+            appName: pages
+            fieldEditable: false
+            identifierToPathConverter:
+              class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+              
+        - name: shoppingList
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Shopping list
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          field:
+            class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            name: shoppingitem 
+            
+        - name: shoppingListChildrenNode
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Shopping list ChildrenNode
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueChildrenNodeTransformer
+          field:
+            class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            name: shoppingitemChildrenNode 
+            
+        - name: shoppingListSubChildNodeTransformer
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Shopping list SubChildNodeTransformer
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueChildNodeTransformer
+          field:
+            class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            name: shoppingitemSubChildNodeTransformer 
+                             
+        - name: shoppingListsubchilpropr
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Shopping list subchilpropr
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          field:
+            class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            name: shoppingitemsubchilpropr 
+    - name: MV composite
+      label: MV composite
+      fields:
+        - name: MVCevents
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Events
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+          field:
+            name: compositeField
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+            fields:
+              - name: MVCtitle
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Title
+              - name: MVCdate
+                class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+                label: Date
+                
+    - name: Combining delegating transformers
+      label: Combining delegating transformers
+      fields:
+      
+        - name: flights 
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: flights 
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          field:
+          
+            name: flight
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            label: flight
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            
+            fields:
+            
+              - name: from
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: from
+              - name: to
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: to     
+              - name: seats 
+                class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+                label: seats 
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+                field:
+                  name: seat
+                  label: seat
+                  class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="ingenico" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:contentNode</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>6da30d9b-fd9b-459e-aac4-6f952444f9e3</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>false</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2017-08-29T11:59:24.509+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:node sv:name="common">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>2df13ed9-6a5e-43db-bfdb-c34db8c3e6bb</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2017-10-16T10:54:49.246+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="service.endpoint.alias.gateway" sv:type="String">
+      <sv:value>https://ogone.test.v-psp.com/ncol/test/alias_gateway_utf8.asp</sv:value>
+    </sv:property>
+    <sv:property sv:name="service.endpoint.direct.link" sv:type="String">
+      <sv:value>https://ogone.test.v-psp.com/ncol/test/orderdirect_utf8.asp</sv:value>
+    </sv:property>
+    <sv:property sv:name="service.endpoint.paypal" sv:type="String">
+      <sv:value>https://ogone.test.v-psp.com/ncol/test/orderstandard_utf8.asp</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="default-site">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>61d1754d-d9b4-4498-9c31-ec71e5670521</sv:value>
+    </sv:property>
+    <sv:property sv:name="acceptUrl" sv:type="String">
+      <sv:value>http://localhost:8080/magnolia-webapp/.IngenicoServlet</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.passphrase.sha.in" sv:type="String">
+      <sv:value>6vN/K9MgZ0vQ+y1oWYV9Q7BHcU2+13a9Xw3RIe1vNoY=</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.passphrase.sha.out" sv:type="String">
+      <sv:value>XfLzZG6wnLP3JdMLaqwz05kHYOvtvhdRQfPuVKTilOU=</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.userId" sv:type="String">
+      <sv:value>atsistemastestapi</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.userPswd" sv:type="String">
+      <sv:value>vWfRnMqHRScMye650OeEWg==</sv:value>
+    </sv:property>
+    <sv:property sv:name="exceptionUrl" sv:type="String">
+      <sv:value>www.paginaMagnolia.com</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="koUrl" sv:type="String">
+      <sv:value>https://www.onedesk.com/wordpress/wp-content/uploads/2013/02/fail.png</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2016-05-03T16:46:21.313+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2017-08-30T12:00:29.881+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="okUrl" sv:type="String">
+      <sv:value>http://www.ciberespacio.com.ve/wp-content/uploads/2015/02/ok.png</sv:value>
+    </sv:property>
+    <sv:property sv:name="pspId" sv:type="String">
+      <sv:value>atsistemastest</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="default-site-paypal">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>6598b502-0788-4ef3-8c2d-d534ac50e970</sv:value>
+    </sv:property>
+    <sv:property sv:name="acceptUrl" sv:type="String">
+      <sv:value>http://localhost:8080/magnolia-webapp/.PaypalIngenicoServlet</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.passphrase.sha.in" sv:type="String">
+      <sv:value>6vN/K9MgZ0vQ+y1oWYV9Q7BHcU2+13a9Xw3RIe1vNoY=</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.passphrase.sha.out" sv:type="String">
+      <sv:value>XfLzZG6wnLP3JdMLaqwz05kHYOvtvhdRQfPuVKTilOU=</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.userId" sv:type="String">
+      <sv:value>atsistemastestapi</sv:value>
+    </sv:property>
+    <sv:property sv:name="api.userPswd" sv:type="String">
+      <sv:value>vWfRnMqHRScMye650OeEWg==</sv:value>
+    </sv:property>
+    <sv:property sv:name="declineUrl" sv:type="String">
+      <sv:value>http://localhost:8080/magnolia-webapp/.PaypalIngenicoServlet</sv:value>
+    </sv:property>
+    <sv:property sv:name="exceptionUrl" sv:type="String">
+      <sv:value>www.paginaMagnolia.com</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="koUrl" sv:type="String">
+      <sv:value>https://www.onedesk.com/wordpress/wp-content/uploads/2013/02/fail.png</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2017-10-06T11:05:00.687+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2017-10-06T11:05:00.695+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2017-10-11T09:54:22.227+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="okUrl" sv:type="String">
+      <sv:value>http://www.ciberespacio.com.ve/wp-content/uploads/2015/02/ok.png</sv:value>
+    </sv:property>
+    <sv:property sv:name="pspId" sv:type="String">
+      <sv:value>atsistemastest</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

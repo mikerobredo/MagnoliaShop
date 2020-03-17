@@ -1,0 +1,33 @@
+form:
+ tabs:
+    - name: tabImage
+      label: Image
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: titulo
+          placeholder: inserta un titulo
+        - name: email
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: email
+          placeholder: ejemplo@mail.com
+        - name: mensage
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: mensage     
+        - name: name
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: nombre     
+        - name: image
+          fieldType: link
+          targetWorkspace: dam
+          appName: assets
+          label: Select image
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

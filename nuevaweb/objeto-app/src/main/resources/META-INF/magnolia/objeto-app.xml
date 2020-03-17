@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>objeto-app</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>com.atsistemas.magnolia.objeto.objetoModule</class>
+  <versionHandler>com.atsistemas.magnolia.objeto.setup.objetoModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <!-- For more information on module descriptor configuration options -->
+  <!-- https://documentation.magnolia-cms.com/display/DOCS/XML-based+module+descriptor -->
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>*</version>
+    </dependency>
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <dependency>
+      <name>mte</name>
+      <version>0.7/*</version>
+    </dependency>
+    -->
+  </dependencies>
+<!--  //añadido -->
+   <repositories>
+      <repository>
+         <name>magnolia</name>
+         <workspaces>
+            <workspace>caja</workspace>
+         </workspaces>
+         <nodeTypeFile>/mgnl-nodetypes/objeto-nodetypes.xml</nodeTypeFile>
+      </repository>
+   </repositories>
+   <!--  //añadido -->
+  
+</module>

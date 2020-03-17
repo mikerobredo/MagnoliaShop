@@ -1,0 +1,12 @@
+title: Redsys (segundo paso)
+renderType: freemarker
+dialog: redsys-payment-module:pages/redsys-page
+templateScript: /redsys-payment-module/templates/pages/redsys-page-test.ftl
+areas:
+  main:
+    type: list
+    availableComponents:
+      redsys:
+        id: redsys-payment-module:components/redsys
+      redsys-insite:
+        id: redsys-payment-module:components/redsys-insite

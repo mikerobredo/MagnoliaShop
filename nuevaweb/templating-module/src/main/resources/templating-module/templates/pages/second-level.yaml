@@ -1,0 +1,37 @@
+templateScript: /templating-module/templates/pages/second-level.ftl
+renderType: freemarker
+visible: true
+dialog: templating-module:pages/example-page-properties
+areas:
+areas:
+  header:
+    editable: false
+    inheritance:
+      enabled: true
+      components: all
+
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: templating-module:components/dummy-component
+      titleText-component:
+        id: templating-module:components/titleText-component
+      double-box-component:
+        id: templating-module:components/double-box-component
+      titled-3box-component:
+        id: templating-module:components/titled-3cards-component
+      form-foto-component:
+        id: templating-module:components/form-foto-component
+      2columns:
+        id: templating-module:areas/2columns
+      articles-view-component:
+        id: templating-module:components/articles-view-component
+
+  footer:
+    editable: false
+    inheritance:
+      enabled: true
+      components: all
+    
+        

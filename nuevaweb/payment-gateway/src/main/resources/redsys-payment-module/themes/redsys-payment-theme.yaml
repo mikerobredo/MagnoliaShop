@@ -1,0 +1,20 @@
+cssFiles:
+  bootstrap:
+    addFingerPrint: true
+    link: /.resources/redsys-payment-module/webresources/css/bootstrap.css
+    media: all
+  estiloPersonalizado:
+    addFingerPrint: true
+    link: /.resources/redsys-payment-module/webresources/css/style.css
+    media: all
+jsFiles:
+  respimage:
+    addFingerPrint: true
+    link: /.resources/redsys-payment-module/webresources/js/redsysutils.js
+  jquery:
+    addFingerPrint: true
+    link: /.resources/redsys-payment-module/webresources/js/jquery-3.4.1.min.js
+  redsys:
+    addFingerPrint: true
+    link: /.resources/redsys-payment-module/webresources/js/redsysutils.js
+    

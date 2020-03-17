@@ -1,0 +1,37 @@
+form:
+  label: First Page Dialog
+  tabs:
+    - name: tabMain
+      label: Page Content
+      fields:
+
+        - name: title
+          fieldType: text
+          label: Page Title
+          description: Define the Page's title.
+          i18n: true
+
+        - name: abstract
+          fieldType: text
+          label: Abstract
+          rows: 5
+          description: Add an Abstract of the Page.
+          i18n: true
+
+        - name: imageLink
+          fieldType: link
+          label: Page
+          description: Choose a page to link to.
+          required: true
+          appName: pages
+          targetWorkspace: website
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+
+actions:
+  commit:
+    label: save changes
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    label: cancel
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

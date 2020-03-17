@@ -1,0 +1,116 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: logo
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          description: Las dimensiones recomendadas para esta imagen son de 170x58
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+        - name: logoAlt
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true                       
+        - name: titleInformation
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+        - name: information
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          i18n: true
+        - name: twitterCheck
+          label: Twitter
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          buttonLabel: Select to include the latest Twitter posts in the footer
+        - name: facebookCheck
+          label: Facebook
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          buttonLabel: Select to include the latest Facebook posts in the footer
+
+    - name: tabCol4
+      fields:
+        - name: logocmmi
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          description: Las dimensiones recomendadas para esta imagen son de 250x48
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+        - name: logocmmiAlt
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+        - name: logoMagnolia
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          description: Las dimensiones recomendadas para esta imagen son de 250x48
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+        - name: logoMagnoliaAlt
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true            
+        - name: selectImages
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueSubnodeTransformer
+          field:
+            name: compositeField
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            layout: vertical
+            required: true
+            fields:
+              - name: line
+                class: info.magnolia.ui.form.field.definition.StaticFieldDefinition
+                value: ----------------------------------------------------------------------
+              - name: image
+                class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                targetWorkspace: dam
+                appName: assets
+                description: Las dimensiones recomendadas para esta imagen son de 80x145
+                identifierToPathConverter:
+                  class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+                contentPreviewDefinition:
+                  contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+              - name: imageAlt
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                i18n: true
+              
+    - name: tabBelow
+      fields:
+        - name: copyright
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+        - name: items
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueSubnodeTransformer
+          field:
+            name: item
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            layout: vertical
+            fields:
+              - name: newLink
+                class: info.magnolia.ui.form.field.definition.StaticFieldDefinition
+                value: -------------------------------------------------------------------
+              - name: textTitle
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                i18n: true
+              - name: link
+                class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                targetWorkspace: website
+                appName: pages
+                identifierToPathConverter:
+                  class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+                
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

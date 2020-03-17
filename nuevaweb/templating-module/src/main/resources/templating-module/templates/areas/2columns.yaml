@@ -1,0 +1,14 @@
+templateScript: /templating-module/templates/areas/2columns.ftl
+renderType: freemarker
+areas:
+  2columns-left:
+    type: list
+    availableComponents:
+      simple-form-component:
+        id: templating-module:components/simple-form-component
+        
+  2columns-right:
+    type: list
+    availableComponents:
+      simple-foto-component:
+        id: templating-module:components/simple-foto-component

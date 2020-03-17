@@ -1,0 +1,16 @@
+templateScript: /payment-gateway/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: payment-gateway:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      paypal-component:
+        id: payment-gateway:components/paypal-component
+      ingenico-component:
+        id: payment-gateway:components/ingenico-component
+      paypal-ingenico-component:
+        id: payment-gateway:components/paypal-ingenico-component
+      error-component:
+        id: payment-gateway:components/error-component

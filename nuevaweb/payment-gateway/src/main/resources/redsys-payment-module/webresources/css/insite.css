@@ -1,0 +1,253 @@
+/* NORMALIZE */
+#demo-interactiva body,figure,form,h1,h2,h3,h4,h5,h6{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}[hidden],audio:not([controls]){display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}button,html,input,select,textarea{font-family:sans-serif}a:focus{outline:dotted thin}a:active,a:hover{outline:0}h1{font-size:2em}h2{font-size:1.5em}h4{font-size:1em}h5{font-size:.83em}h6{font-size:.75em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}dl,menu,ol,p,pre,ul{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}small,sub,sup{font-size:75%}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:after,q:before{content:'';content:none}sub,sup{line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ol,nav ul{list-style:none}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+#demo-interactiva section{
+  max-width: 400px;
+  width: 100%;
+  margin:0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+#demo-interactiva .header{
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+#demo-interactiva .header h4{
+  font-weight: normal;
+  margin-bottom: 5px;
+  color:#555;
+  float: left;
+  font-size: 14px;
+}
+
+#demo-interactiva label{
+  display: none;
+}
+
+::placeholder{
+  color: #AAA;
+}
+
+#demo-interactiva .invalid{
+  color: #da3a2e!important;
+}
+
+.credit-card-group {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  overflow: hidden;
+  background-color: #FFF;
+  margin-bottom: 5px;
+  position: relative; 
+  box-shadow: 0px 1px 11px #CCC;
+  border: 1px solid #DDD;
+  border-radius: 7px;
+  padding: 0 15px;
+  float: left;}
+.credit-card-group input {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    padding: 0;
+    padding: 11px 0; }
+.credit-card-group .card-number {
+    width: 48%; 
+    border-right: 1px solid #DDD;}
+.credit-card-group .card-number.transitioning-out {
+}
+.credit-card-group .card-number.transitioning-in {
+      }
+.credit-card-group .card-number.full {
+      width: 15%; }
+.credit-card-group .card-expiration {
+    width: 21.5%; 
+    border-right: 1px solid #DDD; 
+    text-align: center; }
+.credit-card-group .card-zip {
+    width: 20%; }
+.credit-card-group .card-cvv {
+    width: 18%; 
+    text-align: center; }
+.credit-card-group.invalid {
+    border-color: #da3a2e; }
+.credit-card-group.invalid input {
+      color: #da3a2e; }
+.credit-card-group.valid {
+    /*border: 1px solid #089e00;*/ }
+
+#demo-interactiva .card-image {
+  background-image: url("../img/cc-front.png"); 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 21px;
+  position: relative;
+  top: 50%;
+  margin: 0 3px -6px 0;
+  width: 32px;
+  z-index: 2;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+#demo-interactiva .card-image.visa {
+  background-image: url("../img/cc-visa.png"); }
+#demo-interactiva .card-image.mc {
+  background-image: url("../img/cc-mc.png"); }
+#demo-interactiva .card-image.amex {
+  background-image: url("../img/cc-amex.png"); }
+#demo-interactiva .card-image.disc {
+  background-image: url("../img/cc-disc.png"); }
+#demo-interactiva .card-image.dinners {
+  background-image: url("../img/cc-dinners.png"); }
+#demo-interactiva .card-image.jcb {
+  background-image: url("../img/cc-jcb.png"); }
+#demo-interactiva .card-image.cvv2 {
+  background-image: url("../img/cc-back.png"); 
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+
+#demo-interactiva .card-instruction {
+  font-size: 12px;
+ /*color: #888;*/
+  display: block;
+  margin-bottom: 10px; }
+  .card-instruction.invalid {
+    color: #da3a2e!important; }
+  .card-instruction.valid {
+    color: #089e00!important; }
+
+#demo-interactiva .shake {
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake; }
+
+/* ======================================
+ * ANIMATIONS
+ * ======================================
+ */
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0); }
+
+  30%, 60% {
+    -webkit-transform: translateX(-10px); }
+
+  40%, 80% {
+    -webkit-transform: translateX(10px); } }
+
+@-moz-keyframes shake {
+  0%, 100% {
+    -moz-transform: translateX(0); }
+
+  30%, 60% {
+    -moz-transform: translateX(-10px); }
+
+  40%, 80% {
+    -moz-transform: translateX(10px); } }
+@-o-keyframes shake {
+  0%, 100% {
+    -o-transform: translateX(0); }
+
+  30%, 60% {
+    -o-transform: translateX(-10px); }
+
+  40%, 80% {
+    -o-transform: translateX(10px); } }
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+
+  30%, 60% {
+    transform: translateX(-10px); }
+
+  40%, 80% {
+    transform: translateX(10px); } }
+
+
+#demo-interactiva button{
+    color: #FFF;
+    background-color: #4CAF50;
+    font-size: 18px;
+    display: block;
+    padding: 9px 20px;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 2px 7px #CCC;
+    -moz-box-shadow: 0px 2px 7px #CCC;
+    box-shadow: 0px 2px 7px #CCC;
+    margin:0 auto;
+    width: 220px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+
+#demo-interactiva button:active{
+    -webkit-box-shadow: 0px 2px 3px #CCC;
+    -moz-box-shadow: 0px 2px 3px #CCC;
+    box-shadow: 0px 2px 3px #CCC;
+    position: relative;
+    top: 2px;
+    outline: none;
+}
+
+#demo-interactiva button:focus{
+  outline: none;
+}
+#demo-interactiva button:disabled{
+  opacity: 0.5;
+}
+
+@media(max-width:500px) {
+  section{max-width: 320px;padding: 40px 0;}
+  .credit-card-group{padding: 0 5px;}
+  input{font-size: 14px;}
+  .credit-card-group .card-number{width: 147px;}
+  .credit-card-group .card-expiration{width: 57px;}
+  .credit-card-group .card-cvv{width: 57px;}
+
+}
+
+@media(max-width:320px) {
+  .credit-card-group {padding: 0;}
+}

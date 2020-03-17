@@ -1,0 +1,32 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: richtextTitle
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Hola que tal
+        - name: textSubtitle
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: objeto
+          fieldType: link
+          targetWorkspace: caja
+          appName: objeto-app
+          label: Select objeto
+        - name: selectCategories
+          fieldType: multiValue
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodeTransformer
+          label: Select category
+          field:
+            name: linkField
+            class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+            targetWorkspace: caja
+            appName: objeto-app
+            identifierToPathConverter:
+              class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+            
+          
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

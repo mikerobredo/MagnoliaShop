@@ -1,0 +1,2 @@
+templateScript: /payment-gateway/templates/components/paypal-ingenico-component.ftl
+renderType: freemarker

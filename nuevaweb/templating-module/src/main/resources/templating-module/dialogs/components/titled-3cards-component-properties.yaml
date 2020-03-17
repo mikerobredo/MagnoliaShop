@@ -1,0 +1,35 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: mainTitle
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Titulo principal
+        - name: threCards
+          fieldType: multiValue
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+          label: Rellena tarjeta
+          field:
+            name: compositeField
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+            layout: vertical
+            fields:
+              - name: tx1
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Descripcion
+              - name: tx2
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: nombreArticulo
+              - name: tx3
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Precio
+              - name: tx4
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Boton           
+          
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

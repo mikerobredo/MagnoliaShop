@@ -1,0 +1,18 @@
+title: summary (tercer paso)
+renderType: freemarker
+dialog: redsys-payment-module:pages/summary
+templateScript: /redsys-payment-module/templates/pages/summary.ftl
+modelClass: info.magnolia.training.fullstack.templating.redsysModel.RedsysModelPayment
+
+areas:
+  main:
+    type: list
+    availableComponents:
+      redsys:
+        id: redsys-payment-module:components/redsys
+      redsys-insite:
+        id: redsys-payment-module:components/redsys-insite
+      textimage:
+        id: mtk:components/textImage  
+      
+      

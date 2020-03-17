@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+#set ($paymentPaypalSendData = $dataToSendPayment.paymentPaypalSendData)
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$('input[name="$dataToSendPayment.inputFieldPaypalMerchantId"]').val("$paymentPaypalSendData.pspId");
+	$('input[name="$dataToSendPayment.inputFieldPaypalOrderId"]').val("$paymentPaypalSendData.orderId");
+	$('input[name="$dataToSendPayment.inputFieldPaypalAmount"]').val("$paymentPaypalSendData.amount");
+	$('input[name="$dataToSendPayment.inputFieldPaypalCurrency"]').val("$paymentPaypalSendData.currency");
+	$('input[name="$dataToSendPayment.inputFieldPaypalLanguage"]').val("$paymentPaypalSendData.language");
+	$('input[name="$dataToSendPayment.inputFieldPaypalPM"]').val("$paymentPaypalSendData.pm");
+	$('input[name="$dataToSendPayment.inputFieldPaypalTxToken"]').val("$paymentPaypalSendData.txtoken");
+	$('input[name="$dataToSendPayment.inputFieldPaypalPayId"]').val("$paymentPaypalSendData.payId");
+	$('input[name="$dataToSendPayment.inputFieldPaypalAcceptUrl"]').val("$paymentPaypalSendData.acceptUrl");
+	$('input[name="$dataToSendPayment.inputFieldPaypalDeclineUrl"]').val("$paymentPaypalSendData.declineUrl");
+	$('input[name="$dataToSendPayment.inputFieldPaypalOperation"]').val("$paymentPaypalSendData.operation");
+	$('input[name="$dataToSendPayment.inputFieldPaypalShaHash"]').val("$dataToSendPayment.shaHash");
+	
+	$( "#formPaypalData" ).submit();
+});
+</script>
+</head>
+<body>
+<div id="main">
+	<form method="post" action="$dataToSendPayment.endpoint" id="formPaypalData" name="formPaypalData">
+
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalMerchantId">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalOrderId">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalAmount">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalCurrency">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalLanguage">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalPM">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalTxToken">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalPayId">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalAcceptUrl">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalDeclineUrl">
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalOperation">
+
+	 <input type="hidden" name="$dataToSendPayment.inputFieldPaypalShaHash">
+	 
+	</form>
+ 
+</div>
+</body>
+</html>

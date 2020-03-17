@@ -1,0 +1,56 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: image
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          description: Las dimensiones recomendadas para esta imagen son de 170x58
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+        - name: firstText
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: primer texto
+        - name: secondText
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: segundo texto
+        - name: headerLinks
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueSubnodeTransformer
+          field:
+            name: link
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            layout: vertical
+            fields:
+              - name: newLink
+                class: info.magnolia.ui.form.field.definition.StaticFieldDefinition
+                value: -------------------------------------------------------------------
+              - name: text
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                i18n: true
+              - name: linkType
+                class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
+                options:
+                  - name: internalLink
+                    selected: true
+                    value: internalLink
+                  - name: externalLink
+                    value: externalLink
+                fields:
+                  - name: internalLink
+                    class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                    targetWorkspace: website
+                    appName: pages
+                    identifierToPathConverter:
+                      class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+                  - name: externalLink
+                    class: info.magnolia.ui.form.field.definition.TextFieldDefinition  
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

@@ -1,0 +1,4 @@
+templateScript: /templating-module/templates/components/articles-description-component.ftl
+renderType: freemarker
+dialog: templating-module:components/articles-description-component-properties
+modelClass: com.atsistemas.magnolia.templating.models.ArticlesViewComponentModel

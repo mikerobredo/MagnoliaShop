@@ -1,0 +1,15 @@
+*~
+.DS_Store
+target
+*.iml
+*.ipr
+*.iws
+*.log
+.idea
+.project
+.classpath
+.settings
+.checkstyle
+/target/
+/.metadata/
+/.recommenders/

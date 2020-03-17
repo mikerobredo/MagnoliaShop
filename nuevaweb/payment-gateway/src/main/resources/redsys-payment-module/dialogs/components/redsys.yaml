@@ -1,0 +1,35 @@
+form:
+  label: Pago de Redsys
+  tabs:
+    - name: tabMain
+      label: Main
+      fields:
+        - name: merchant
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: merchant
+          i18n: true
+        - name: terminal
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: terminal
+          i18n: true
+        - name: currency
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: currency
+          i18n: true
+        - name: merchantSignature
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: merchantSignature 
+          i18n: true       
+      
+        - name: Link
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: website
+          appName: pages
+          label: Select Link
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.transformer.basic.BasicTransformer
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
