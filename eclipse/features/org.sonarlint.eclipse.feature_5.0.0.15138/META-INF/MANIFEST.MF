@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: vsts
+Build-Jdk: 11.0.6
+
+Name: p2.inf
+SHA-256-Digest: RxuZydua3UUgF8/G+zu6Q/JXZ/mZGq0Y4kaeY34Uwk4=
+
+Name: feature.xml
+SHA-256-Digest: 6ee7amUjrnyDnS8T8gHOu6Yu7/9yCnu0Cx+WAF0VM5Y=
+
+Name: feature.properties
+SHA-256-Digest: +cUYkiUvpJcMVbkrHPO1IbjBWZFcT39TIIIzMSIW9rY=
+

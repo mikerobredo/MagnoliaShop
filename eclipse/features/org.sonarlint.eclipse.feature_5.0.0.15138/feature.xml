@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.sonarlint.eclipse.feature"
+      label="%feature_name"
+      version="5.0.0.15138"
+      provider-name="%provider_name"
+      plugin="org.sonarlint.eclipse.ui">
+
+   <description url="https://www.sonarlint.org/">
+      %description
+   </description>
+
+   <copyright url="https://www.sonarlint.org/">
+      %copyright
+   </copyright>
+
+   <license url="http://www.gnu.org/licenses/lgpl.txt">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.equinox.security"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.core.filebuffers"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.core.net"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.team.core"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.eclipse.core.databinding.property"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.jface.databinding"/>
+      <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.sonarsource.sonarlint.core.sonarlint-client-api"/>
+      <import plugin="org.sonarsource.sonarlint.core.sonarlint-core"/>
+      <import plugin="org.eclipse.mylyn.commons.ui"/>
+   </requires>
+
+   <plugin
+         id="org.sonarlint.eclipse.core"
+         download-size="32557"
+         install-size="35918"
+         version="5.0.0.15138"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarlint.eclipse.ui"
+         download-size="445"
+         install-size="864"
+         version="5.0.0.15138"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarsource.sonarlint.core.sonarlint-client-api"
+         download-size="94"
+         install-size="178"
+         version="4.8.0.14729"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarsource.sonarlint.core.sonarlint-core"
+         download-size="7790"
+         install-size="19043"
+         version="4.8.0.14729"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarlint.eclipse.cdt"
+         download-size="21"
+         install-size="37"
+         version="5.0.0.15138"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarlint.eclipse.jdt"
+         download-size="18"
+         install-size="31"
+         version="5.0.0.15138"
+         unpack="false"/>
+
+   <plugin
+         id="org.sonarlint.eclipse.m2e"
+         download-size="12"
+         install-size="16"
+         version="5.0.0.15138"
+         unpack="false"/>
+
+</feature>

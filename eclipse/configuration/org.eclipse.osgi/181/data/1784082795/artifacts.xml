@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1574770333679'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='10'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.target.ftp' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.target.ftp_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.target.ftp_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.team.extras' version='3.1.100.v20060612--29IAAYAZEO7IA5'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/features/org.eclipse.team.extras_3.1.100.v20060612--29IAAYAZEO7IA5/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\features\org.eclipse.team.extras_3.1.100.v20060612--29IAAYAZEO7IA5'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.webdav' version='3.0.101.v20060718'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.webdav_3.0.101.v20060718/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.webdav_3.0.101.v20060718'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.target.ide' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.target.ide_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.target.ide_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.target.webdav' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.target.webdav_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.target.webdav_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.target.iofile' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.target.iofile_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.target.iofile_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.team.target' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.team.target_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.team.target_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ftp' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.ftp_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.ftp_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.target' version='1.0.0'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.target_1.0.0/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.target_1.0.0'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.team.extras.source' version='3.1.100.v20060612'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/mnunez.robredo/Desktop/Nueva%20carpeta/eclipse/plugins/org.eclipse.team.extras.source_3.1.100.v20060612/'/>
+        <property name='file.name' value='C:\Users\mnunez.robredo\Desktop\Nueva carpeta\eclipse\plugins\org.eclipse.team.extras.source_3.1.100.v20060612'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

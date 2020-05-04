@@ -38,15 +38,6 @@ public class RedsysModel<RD extends ConfiguredTemplateDefinition> extends Render
 
 	@Inject
 	private RedsysModelUtils redsysModelUtils;
-	
-	
-	public String getRestUrl() {
-		return restUrl;
-	}
-
-	public void setRestUrl(String restUrl) {
-		this.restUrl = restUrl;
-	}
 
 	@Inject
 	public RedsysModel(Node content, RD definition, RenderingModel<?> parent) {
@@ -54,8 +45,8 @@ public class RedsysModel<RD extends ConfiguredTemplateDefinition> extends Render
 	}
 	
 	@Override
-	public String execute() {		
-		try {
+	public String execute() {	
+      		try {
 			setDataInContexFromComponent();
 		} catch (RepositoryException e) {
 			
@@ -99,7 +90,6 @@ public class RedsysModel<RD extends ConfiguredTemplateDefinition> extends Render
 		return a;
 		
 	}
-
 	
 	private void getPaymentData() {
 		try {
@@ -125,8 +115,11 @@ public class RedsysModel<RD extends ConfiguredTemplateDefinition> extends Render
 		this.ordenInternaMod = ordenInternaMod;
 	}
 
-
 	// getter y setters
+	public String hi() {
+		return "hi";
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -189,6 +182,14 @@ public class RedsysModel<RD extends ConfiguredTemplateDefinition> extends Render
 
 	public void setCheck(String check) {
 		this.check = check;
+	}
+	
+	public String getRestUrl() {
+		return restUrl;
+	}
+
+	public void setRestUrl(String restUrl) {
+		this.restUrl = restUrl;
 	}
 
 }

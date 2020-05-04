@@ -1,2 +1,0 @@
-# MagnoliaShop
-Practice with Magnolia

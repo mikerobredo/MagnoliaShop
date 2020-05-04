@@ -56,8 +56,7 @@ public class MVCMultivalue<RD extends ConfiguredTemplateDefinition> extends Rend
 						if(subAux.hasProperty("seat")) {
 							m1 = m1 + " asiento: " + subAux.getProperty("seat").getString() ;
 						}
-					}
-					
+					}					
 				}
 				m1 = m1 + "<br>" ;			
 			}

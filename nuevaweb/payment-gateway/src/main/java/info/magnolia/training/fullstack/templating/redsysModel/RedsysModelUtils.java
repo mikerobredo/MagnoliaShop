@@ -12,7 +12,9 @@ public class RedsysModelUtils {
 		String urlRest= "0";
 		try {
 			URL url1= new URL (StrUrl1);
+			System.out.println("soy RedsysModelUtils");
 			urlRest= String.format("%s://%s:%s%s%s", url1.getProtocol(), url1.getHost(), url1.getPort(),MgnlContext.getContextPath(),restEndpoint);			
+			//System.out.println(urlRest);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}	

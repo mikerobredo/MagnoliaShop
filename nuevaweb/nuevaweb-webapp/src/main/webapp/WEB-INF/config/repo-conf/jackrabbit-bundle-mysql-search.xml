@@ -4,7 +4,7 @@
   <DataSources>
     <DataSource name="magnolia">
       <param name="driver" value="com.mysql.jdbc.Driver" />
-      <param name="url" value="jdbc:mysql://localhost:3306/magnoliapruebas" />
+      <param name="url" value="jdbc:mysql://localhost:3306/magnoliapruebas?useSSL=false" />
       <param name="user" value="root" />
       <param name="password" value="root" />
       <param name="databaseType" value="mysql"/>

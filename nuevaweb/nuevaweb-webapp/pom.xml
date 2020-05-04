@@ -62,13 +62,19 @@
       <artifactId>templating-module</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
-        
+		<!-- Payment gateway module -->
+		<dependency>
+			<groupId>com.atsistemas.mamp.ecommerce</groupId>
+			<artifactId>payment-gateway</artifactId>
+			<version>${payment.gateway.module.version}</version>
+		</dependency>
+     <!-- option iii - magnolia-dx-core-webapp  
     <dependency>    
 	    <groupId>com.atsistemas.mamp.ecommerce</groupId>
 		<artifactId>payment-gateway</artifactId>
 		<version>${payment.gateway.module.version}</version>
     </dependency>
-      
+      -->  
     <dependency>
      	<groupId>info.magnolia.ui</groupId>
       	<artifactId>magnolia-ui-workbench</artifactId>
@@ -79,8 +85,26 @@
       <artifactId>insite-api</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
-
-    
+<dependency>
+  <groupId>info.magnolia.rest</groupId>
+  <artifactId>magnolia-rest-services</artifactId>
+  <version>2.1.5</version>
+</dependency>
+<dependency>
+  <groupId>info.magnolia.rest</groupId>
+  <artifactId>magnolia-rest-integration</artifactId>
+  <version>2.1.5</version>
+</dependency>
+<dependency>
+  <groupId>info.magnolia.rest</groupId>
+  <artifactId>magnolia-rest-content-delivery</artifactId>
+  <version>2.1.5</version>
+</dependency>
+<dependency>
+  <groupId>info.magnolia.rest</groupId>
+  <artifactId>magnolia-rest-tools</artifactId>
+  <version>2.1.5</version>
+</dependency>
     
 
 

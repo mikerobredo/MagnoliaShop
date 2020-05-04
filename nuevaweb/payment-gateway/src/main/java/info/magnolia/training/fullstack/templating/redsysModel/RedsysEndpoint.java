@@ -24,6 +24,7 @@ public class RedsysEndpoint<D extends EndpointDefinition> extends AbstractEndpoi
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public Response setIDRedsys()
     {  	
+    	System.out.println("hi");
     	if (MgnlContext.getParameter("idredsys") != null) {
 			MgnlContext.setAttribute("idr", MgnlContext.getParameter("idredsys"),2);	
     	}	    	

@@ -28,6 +28,7 @@ public class RedsysFirstStepModel<RD extends ConfiguredTemplateDefinition> exten
 	public String execute() {
 
 		cleanContext();		
+		
 		return super.execute();
 
 	}
