@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-    <groupId>com.atsistemas.magnolia</groupId>
-    <artifactId>nuevaweb</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
+		<groupId>com.atsistemas.magnolia</groupId>
+		<artifactId>nuevaweb</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.atsistemas.mamp.ecommerce</groupId>
@@ -42,9 +42,13 @@
 			<artifactId>magnolia-rest-tools</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>javax.servlet</groupId>
-		    <artifactId>javax.servlet-api</artifactId>
-		    <scope>provided</scope>
+			<groupId>info.magnolia.restclient</groupId>
+			<artifactId>magnolia-resteasy-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -87,14 +91,14 @@
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 		</dependency>
-		
-		
+
+
 		<dependency>
-		<groupId>info.magnolia</groupId>
-		  <artifactId>magnolia-templating</artifactId>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-templating</artifactId>
 		</dependency>
-		
-		
+
+
 		<dependency>
 			<groupId>info.magnolia</groupId>
 			<artifactId>magnolia-rendering</artifactId>
@@ -116,6 +120,22 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		
+		
+		
+		<dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.jboss.resteasy</groupId>
+	<artifactId>resteasy-multipart-provider</artifactId>
+	<version>3.0.20.Final</version>
+</dependency>
+<dependency>
+	<groupId>org.jboss.resteasy</groupId>
+	<artifactId>resteasy-jaxrs</artifactId>
+</dependency>
 
 		<!-- Enterprise Security API -->
 		<dependency>

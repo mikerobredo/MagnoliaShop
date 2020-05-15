@@ -16,6 +16,7 @@
     <script src="${jsFile.link}"></script>
 [/#list]
 </head>
+ ${resfn.js("/redsys-payment-module.*js")}
 
 <body>
     <section>

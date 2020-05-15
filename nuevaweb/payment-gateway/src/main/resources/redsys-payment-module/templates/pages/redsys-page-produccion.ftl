@@ -19,6 +19,8 @@
 [#list theme.jsFiles as jsFile]
     <script src="${jsFile.link}"></script>
 [/#list]
+ ${resfn.js("/redsys-payment-module.*js")}
+ 
 </head>
 
 <body onload="loadRedsysForm()">

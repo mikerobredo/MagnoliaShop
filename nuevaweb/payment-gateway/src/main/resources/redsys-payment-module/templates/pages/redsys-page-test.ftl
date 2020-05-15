@@ -11,7 +11,8 @@
 [#list theme.cssFiles as cssFile]
     <link rel="stylesheet" href="${cssFile.link}" media="${cssFile.media}" />
 [/#list]
- 
+  ${resfn.js("/redsys-payment-module.*js")}
+
 [#list theme.jsFiles as jsFile]
     <script src="${jsFile.link}"></script>
 [/#list] 

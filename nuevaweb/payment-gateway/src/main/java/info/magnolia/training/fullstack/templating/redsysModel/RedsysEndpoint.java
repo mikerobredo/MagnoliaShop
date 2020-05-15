@@ -9,8 +9,9 @@ import javax.ws.rs.core.Response;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.rest.AbstractEndpoint;
 import info.magnolia.rest.EndpointDefinition;
+import io.swagger.annotations.Api;
  
-
+@Api(value = "/RedsysEndpoint")
 @Path("/RedsysEndpoint")
 public class RedsysEndpoint<D extends EndpointDefinition> extends AbstractEndpoint<D> {
  
